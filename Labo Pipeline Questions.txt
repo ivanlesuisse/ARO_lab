@@ -1,0 +1,36 @@
+﻿Barroso Ivan 
+prof. : Marina Zapater Sancho
+ass. : Meury Mike                                                        09/05/2022                                        
+Laboratoire Pipeline :
+Introduction:
+Le pipeline permet de découper en morceaux le circuit est donc d’augmenter la vitesse.On augmente en fait le nombre d’instructions simultanées grâce aux découpes des tâches représentées dans le schéma ci-dessous par les rectangles gris. Voici un croquis d’un processeur basique “pipeliné”:
+  
+
+Réponses aux questions:
+
+
+Analyse du processeur:
+1. incrémentation de 1 au lieu de 2 car on incrémentait la valeur à chaque cycle d’instructions alors que maintenant on le fait à 2 endroits 
+2. L’adresse qui va être mise dans un registre va être utilisée dans le processeur(decode,execute,memory access) et les autres  vont servir lorsque l’on devra les incrémenter pour passer au prochain fetch.
+3. L’adresse connectée au registre de sortie est pour aller au fetch suivant alors que les adresses qui ne sont pas envoyées sont à utiliser maintenant
+4. **Selon si on écrit ou on lit, on ne veut pas avoir des aléas car on veut que cela marche en toutes circonstances.
+5. On irait plus vite mais il faudrait pour cela modifier le circuit pour l'agrandir *
+*principe d’un multiplier: Pour tirer avantage d’un traitement pipeliné, il faut pouvoir décomposer le traitement qui est effectué séquentiellement. La multiplication se prête bien à une décomposition en plusieurs étapes.
+
+
+**Pendant le cycle d'extraction/d'exécution,FETCH CONTROL BUS, le bus de données et le bus d'adresses sont tous utilisés : l'unité FETCH CONTROL BUS  : dictera la vitesse d'horloge du cycle d'extraction/d'exécution.L’unité activera ou non  la ligne de lecture ou d'écriture.
+
+
+Test du processeur:
+1. oui
+2. je pense que c’est le nombre d'instructions dans le fichier lss donc 86 mais j’en sais rien j’ai essayé de comprendre 
+
+
+chronogramme avec sonde qui sort du instr data:
+  
+
+
+
+
+
+1.3 Assembleur : dépendances de données
